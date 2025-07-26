@@ -1,0 +1,64 @@
+/* Page Styles */
+body {
+    background: linear-gradient(135deg, #f06, #48c6ef);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Game Canvas */
+canvas {
+    background-color: #222;
+    border: 5px solid white;
+}
+
+/* Controls Section */
+.controls {
+    margin-top: 20px;
+}
+
+/* Dropdown & Buttons */
+select, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #48c6ef;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Hover Effects */
+button:hover {
+    background-color: #1e90ff;
+}
+
+/* Disabled Button Style */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Score Display */
+.score {
+    margin-top: 20px;
+    font-size: 1.2em;
+}

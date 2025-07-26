@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game & Movie List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Snake Game</h1>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="startBtn">▶ Play</button>
+            <button id="restartBtn" disabled>🔁 Restart</button>
+        </div>
+
+        <div class="score">
+            <p id="score">Score: 0</p>
+            <p id="highScore">High Score: 0</p>
+        </div>
+
+        <!-- 📄 Download Button for Movie PDF -->
+        <div style="margin-top: 20px;">
+            <a href="{{ url_for('static', filename='top_10_movies.pdf') }}" download>
+                <button>📄 Download Top 10 Movies PDF</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
